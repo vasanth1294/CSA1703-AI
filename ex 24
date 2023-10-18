@@ -1,0 +1,12 @@
+iet_suggestions(skinny,[eat_healthy, eat_more, eat_fruits, carbs]).
+diet_suggestions(fat,[reduce_sodium, low_carbs, eat_fruits, protein]).
+
+suggest_diet(Disease) :-
+    diet_suggestions(Disease, Suggestions),
+    write('Diet suggestions for '), write(Disease), write(':'), nl,
+    print_suggestions(Suggestions).
+
+print_suggestions([]).
+print_suggestions([Suggestion|Rest]) :-
+    write('- '), write(Suggestion), nl,
+    print_suggestions(Rest).
