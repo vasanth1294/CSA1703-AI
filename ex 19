@@ -1,0 +1,23 @@
+student(sachin).
+student(sai).
+student(dilli).
+
+teacher(mr_sarvanan).
+teacher(mrs_pramila).
+teacher(mrs_aruna).
+
+subject(ai).
+subject(dwdm).
+subject(foc).
+
+course_code(ai, ai17).
+course_code(dwdm, dwdm14).
+course_code(foc, foc18).
+
+teaches(sarvanan, ai).
+teaches(pramila, dwdm).
+teaches(aruna, foc).
+
+enrolled_in(sachin, ai).
+enrolled_in(sai, dwdm).
+enrolled_in(dilli, foc).
