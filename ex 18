@@ -1,0 +1,5 @@
+(sachin,2004-04-24).
+dob(shreya,2000-05-25).
+
+get_dob(name,date_of_birth):-
+    dob(name,date_of_birth).
